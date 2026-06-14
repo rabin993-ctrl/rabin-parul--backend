@@ -1,0 +1,1 @@
+ALTER TABLE "notification_preferences" ADD COLUMN "post_activity" boolean DEFAULT true NOT NULL;

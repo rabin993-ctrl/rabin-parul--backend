@@ -1,0 +1,2 @@
+DROP INDEX "adoption_requests_listing_user_uidx";--> statement-breakpoint
+CREATE UNIQUE INDEX "adoption_requests_listing_user_active_uidx" ON "adoption_requests" USING btree ("listing_id","requester_id") WHERE "adoption_requests"."status" in ('submitted', 'approved');

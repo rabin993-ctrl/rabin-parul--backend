@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Parul",
+    "slug": "parul",
+    "version": "1.0.0",
+    "scheme": "parul",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.parul.mobile",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "app.parul.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "name": "Parul",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-secure-store",
+        {
+          "configureAndroidBackup": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Parul accesses your photos so you can share companion, adoption, rescue, and lost-and-found updates.",
+          "cameraPermission": "Parul accesses your camera so you can take photos for companion, adoption, rescue, and lost-and-found updates.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-document-picker",
+      "expo-notifications"
+    ]
+  }
+}
